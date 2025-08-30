@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Collaborative Static Website</title>
+
+  <!-- SEO Meta Description -->
+  <meta name="description" content="A collaborative static website demonstrating GitHub Pages workflow with feature branches and pull requests." />
+
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="About • Collaborative Static Website" />
+  <meta property="og:description" content="Explore how this site uses GitHub Pages for collaboration and deployment." />
+  <meta property="og:url" content="https://yourdomain.com/about.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Preload and Stylesheet -->
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">CollabSite</a></h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>About this project</h2>
+    <p>This site demonstrates a simple GitHub Pages workflow with a feature branch, pull request, and deployment.</p>
+    <ul>
+      <li>Zero dependencies</li>
+      <li>Fast to load</li>
+      <li>Easy to collaborate</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> CollabSite</small>
+      <noscript><small>© 2025 CollabSite</small></noscript>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
